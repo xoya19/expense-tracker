@@ -11,3 +11,29 @@ body {
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* FilterBar Component Styling */
+.filter-bar-container select {
+    background-color: #f7f4eb;     /* Warm cream matching the input fields */
+    color: #5c5243;                /* Muted dark brown text */
+    font-family: inherit;          /* Inherits your clean layout font */
+    font-size: 1rem;
+    padding: 10px 15px;            /* Comfortable interior spacing */
+    border: 1px solid #e2ded5;     /* Subtle border matching upper cards */
+    border-radius: 6px;            /* Smooth rounded corners */
+    outline: none;
+    cursor: pointer;
+    min-width: 180px;              /* Ensures consistent visual weight */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02); /* Very soft shadow */
+    transition: all 0.2s ease;
+}
+
+/* Hover and Focus interaction states */
+.filter-bar-container select:hover {
+    border-color: #d1cbc0;
+}
+
+.filter-bar-container select:focus {
+    border-color: #8c7e6b;        /* Deepens on click for visual clarity */
+    background-color: #fcfbfa;
+}
